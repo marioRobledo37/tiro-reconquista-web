@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Staff</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/favicon.ico">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <img src="img/logo.png" class="site-logo">
+    <h1>Staff</h1>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <div class="nav-container">
+    <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="index.html#actividades">Actividades</a>
+      <a href="disciplinas.html">Disciplinas</a>
+      <a href="staff.html">Staff</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="index.html#galeria">Galería</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <h2>Comisión Directiva e Instructores</h2>
+
+  <div class="cards-grid">
+
+    <div class="card">
+      <img src="img/staff1.jpg" class="staff-img">
+      <h3>Nombre Apellido</h3>
+      <p class="role">Presidente</p>
+      <p>Responsable institucional del área de tiro.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/staff2.jpg" class="staff-img">
+      <h3>Nombre Apellido</h3>
+      <p class="role">Instructor</p>
+      <p>Formación y seguridad en prácticas deportivas.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/staff3.jpg" class="staff-img">
+      <h3>Nombre Apellido</h3>
+      <p class="role">Colaborador</p>
+      <p>Apoyo en torneos y actividades.</p>
+    </div>
+
+  </div>
+</section>
+
+<div id="footer"></div>
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  nav.classList.toggle("active");
+}
+fetch("footer.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    })
+    .catch(error => {
+      console.error("No se pudo cargar el footer:", error);
+    });
+</script>
+    <a
+        href="https://wa.me/543482684071?text=Hola,%20quiero%20información%20sobre%20el%20Tiro%20Reconquista"
+        class="whatsapp-float"
+        target="_blank"
+        aria-label="Escribir por WhatsApp"
+        >
+        <span>WhatsApp</span>
+    </a>
+</body>
+</html>

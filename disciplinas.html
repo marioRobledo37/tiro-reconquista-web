@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Disciplinas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/favicon.ico">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <img src="img/logo.png" class="site-logo">
+    <h1>Disciplinas</h1>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <div class="nav-container">
+    <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="index.html#actividades">Actividades</a>
+      <a href="disciplinas.html">Disciplinas</a>
+      <a href="staff.html">Staff</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="index.html#galeria">Galería</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <h2>Disciplinas deportivas</h2>
+
+  <div class="cards-grid">
+
+    <div class="card">
+      <img src="/img/aire de quebrar.png" alt="Aire de quebrar 4.5">
+      <h3>Aire de quebrar 4.5</h3>
+      <p>Ideal para iniciación.</p>
+    </div>
+
+    <div class="card">
+      <img src="/img/disciplina2.png" alt="Tiro Olímpico">
+      <h3>Tiro Olímpico</h3>
+      <p>Precisión y técnica.</p>
+    </div>
+
+    <div class="card">
+      <img src="/img/disciplina3.png" alt="Tiro Olímpico Carabina .22">
+      <h3>Tiro Olímpico</h3>
+      <p>Precisión y técnica.</p>
+    </div>
+
+    <div class="card">
+      <img src="/img/carabina 22.png" alt="Carabina .22">
+      <h3>Carabina .22</h3>
+      <p>Competencia y entrenamiento.</p>
+    </div>
+
+    <div class="card">
+      <img src="/img/disciplina4.png" alt="Armas cortas">
+      <h3>Armas cortas</h3>
+      <p>Disciplina de precisión.</p>
+    </div>
+
+    <div class="card">
+      <img src="/img/disciplina5.png" alt="Arco">
+      <h3>Arco</h3>
+      <p>Concentración y técnica.</p>
+    </div>
+
+  </div>
+</section>
+
+<div id="footer"></div>
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  nav.classList.toggle("active");
+}
+fetch("footer.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    })
+    .catch(error => {
+      console.error("No se pudo cargar el footer:", error);
+    });
+</script>
+    <a
+        href="https://wa.me/543482684071?text=Hola,%20quiero%20información%20sobre%20el%20Tiro%20Reconquista"
+        class="whatsapp-float"
+        target="_blank"
+        aria-label="Escribir por WhatsApp"
+        >
+        <span>WhatsApp</span>
+    </a>
+</body>
+</html>
