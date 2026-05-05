@@ -1,0 +1,68 @@
+[
+  {
+    "nombre": "COMIN FABIAN",
+    "categoria": "SENIOR",
+    "logro": "GANADOR DEL SAN GERONIMO DEL REY DORADO 2016",
+    "foto": "img/tiradores/fabiancomin.png"
+  },
+  {
+    "nombre": "ANA PAULA GARAY",
+    "categoria": "MAYORES",
+    "logro": "",
+    "foto": "img/tiradores/anapaulagaray.png"
+  },
+  {
+    "nombre": "YULIANA CARGNELUTTI",
+    "categoria": "JUNIOR",
+    "logro": "",
+    "foto": "img/tiradores/cargneluttiyuliana.png"
+  },
+  {
+    "nombre": "VIOLETA DELLA ROSA",
+    "categoria": "CADETES",
+    "logro": "",
+    "foto": "img/tiradores/dellarosavioleta.png"
+  },
+  {
+    "nombre": "LUCAS FAIN",
+    "categoria": "MENORES",
+    "logro": "",
+    "foto": "img/tiradores/fainlucas.png"
+  },
+  {
+    "nombre": "GERMAN DOMINGUEZ",
+    "categoria": "SENIOR",
+    "logro": "SAN GERONIMO DE BRONCE 2025",
+    "foto": "img/tiradores/dominguezgerman.png"
+  },
+  {
+    "nombre": "JUAN BAUTISTA AGRETTI",
+    "categoria": "MINI",
+    "logro": "",
+    "foto": "img/tiradores/juanbautistaagretti.png"
+  },
+  {
+    "nombre": "MILAGROS DEL ZOTTO",
+    "categoria": "MAYORES",
+    "logro": "",
+    "foto": "img/tiradores/milagrosdelzotto.png"
+  },
+  {
+    "nombre": "NATASHA ZANABRIA",
+    "categoria": "JUVENILES",
+    "logro": "",
+    "foto": "img/tiradores/natashazanabria.png"
+  },
+  {
+    "nombre": "MARIO ROBLEDO",
+    "categoria": "SENIOR",
+    "logro": "",
+    "foto": "img/tiradores/robledomario.png"
+  },
+  {
+    "nombre": "RUBEN BETIG",
+    "categoria": "+55",
+    "logro": "",
+    "foto": "img/tiradores/betigruben.png"
+  }
+]

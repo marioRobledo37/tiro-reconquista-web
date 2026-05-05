@@ -3,384 +3,246 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tiro Reconquista</title>
-  <meta name="description" content="Club de tiro deportivo en Reconquista. Formación, competencias, disciplinas y uso responsable.">
-  <meta name="keywords" content="tiro reconquista, poligono reconquista, tiro deportivo santa fe, carabina 22, tiro olimpico">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="stylesheet" href="styles.css">
-  <meta name="google-site-verification" content="Kx5s42i0D78qq4XzFjlp6u7Ikinet5jv2GeF0WqHLU0" />
 
   <title>Tiro Reconquista | Polígono de Tiro en Reconquista Santa Fe</title>
 
+  <meta name="description" content="Club de tiro deportivo en Reconquista. Formación, competencias, disciplinas y uso responsable.">
 
-  
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <header class="site-header">
-    <div class="header-inner">
-      <img src="img/logo.png" alt="Logo Sub Comisión de Tiro Reconquista" class="site-logo">
-
-      <div class="header-text">
-        <h1>Sub Comisión de Tiro Reconquista</h1>
-        <p>Reconquista · Santa Fe · Argentina</p>
-      </div>
+<header class="site-header">
+  <div class="header-inner">
+    <img src="img/logo.png" alt="Logo Sub Comisión de Tiro Reconquista" class="site-logo">
+    <div class="header-text">
+      <h1>Sub Comisión de Tiro Reconquista</h1>
+      <p>Reconquista · Santa Fe · Argentina</p>
     </div>
-  </header>
+  </div>
+</header>
 
-  <nav class="main-nav">
+<nav class="main-nav">
   <div class="nav-container">
     <div class="nav-toggle" onclick="toggleMenu()">☰</div>
 
     <div class="nav-links" id="navLinks">
-      <a href="index.html#inicio">Inicio</a>
-      <a href="index.html#actividades">Actividades</a>
+      <a href="#inicio">Inicio</a>
+      <a href="actividades.html">Actividades</a>
       <a href="disciplinas.html">Disciplinas</a>
       <a href="staff.html">Staff</a>
-      <a href="index.html#contacto">Contacto</a>
-      <a href="index.html#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#galeria">Galería</a>
     </div>
   </div>
 </nav>
 
-  <section id="inicio" class="hero">
-    <div>
-      <h2>Bienvenidos al Tiro</h2>
-      <p>Tradición, disciplina y excelencia deportiva</p>
-      <a href="#contacto" class="btn">Contactanos</a>
-    </div>
-  </section>
-
-  <section class="banner">
-    <h2>Compromiso con la seguridad y la educación</h2>
-    <p>
-      En el Polígono de Tiro Reconquista promovemos el uso <strong>responsable, seguro y deportivo</strong>.
-      Rechazamos toda forma de violencia. Creemos que la mejor prevención es la educación,
-      el respeto, la formación adecuada y el acompañamiento de la comunidad.
-    </p>
-  </section>
-
-  <section id="nosotros" class="section fade-in">
-
-    <h2>Nosotros</h2>
-
-    <p class="section-subtitle">
-        Un espacio dedicado al desarrollo del tiro deportivo en Reconquista.
-    </p>
-
-    <div class="about-grid">
-
-        <div class="about-item">
-        <h3>🎯 Formación</h3>
-        <p>
-            Brindamos capacitación para quienes se inician en el tiro deportivo,
-            promoviendo el aprendizaje progresivo y seguro.
-        </p>
-        </div>
-
-        <div class="about-item">
-        <h3>🏆 Competencia</h3>
-        <p>
-            Participamos y organizamos competencias locales y regionales,
-            fomentando el espíritu deportivo y la superación personal.
-        </p>
-        </div>
-
-        <div class="about-item">
-        <h3>🛡️ Seguridad</h3>
-        <p>
-            Promovemos el uso responsable, seguro y deportivo,
-            priorizando la educación como herramienta fundamental.
-        </p>
-        </div>
-
-    </div>
-
-    </section>
-
-  
-
-    <section id="destacados" class="section">
-    <h2>Destacados del mes</h2>
-    <p class="section-subtitle">
-        Reconocimientos, logros y momentos importantes de nuestra comunidad.
-    </p>
-
-    <div class="cards-grid">
-        <div class="highlight-card">
-        <h3>Deportista destacado</h3>
-        <p>Espacio para reconocer el desempeño, compromiso o evolución de un tirador.</p>
-        </div>
-
-        <div class="highlight-card">
-        <h3>Actividad destacada</h3>
-        <p>Resumen de una práctica, torneo, jornada o encuentro importante del mes.</p>
-        </div>
-
-        <div class="highlight-card">
-        <h3>Reconocimiento institucional</h3>
-        <p>Mensaje para socios, colaboradores, instructores o miembros de la comisión.</p>
-        </div>
-    </div>
-    </section>
-
-  <<section id="actividades" class="section fade-in">
-    <h2>Actividades</h2>
-    <p class="section-subtitle">Agenda de próximos eventos y actividades realizadas.</p>
-
-    <div class="agenda-group">
-      <h3 class="agenda-title">Próximos eventos</h3>
-
-      <article class="agenda-card upcoming" onclick="toggleActivity('eventoProximo')">
-        <div class="agenda-date">
-          <span>02</span>
-          <small>MAY</small>
-        </div>
-
-        <img src="img/20260502_primera-fecha.jpeg" alt="Flyer Campeonato Jaaukanigás 2026">
-
-        <div class="agenda-content">
-          <span class="event-badge">Próximo evento</span>
-          <h3>Campeonato Jaaukanigás 2026</h3>
-          <p>Rifles miras abiertas y rifle de aire olímpico.</p>
-        </div>
-      </article>
-
-      <div id="eventoProximo" class="activity-detail">
-        <h3>Información del evento</h3>
-        <p><strong>Fecha:</strong> Sábado 2 de mayo · 9:00 hs.</p>
-        <p>Campeonato social y abierto. Servicio de cantina durante toda la jornada.</p>
-
-        <a href="img/20260502_primera-fecha.jpeg" target="_blank" class="btn">
-          Ver flyer completo
-        </a>
-      </div>
-    </div>
-
-    <div class="agenda-group">
-      <h3 class="agenda-title">Eventos realizados</h3>
-
-      <article class="agenda-card done" onclick="toggleActivity('eventoPistola')">
-        <div class="agenda-date">
-          <span>12</span>
-          <small>ABR</small>
-        </div>
-
-        <img src="img/pistola1.jpeg" alt="Torneo de Pistola Mayo 2026">
-
-        <div class="agenda-content">
-          <span class="event-badge done">Realizado</span>
-          <h3>Torneo de Pistola</h3>
-          <p>Ranking, resultados y fotos del encuentro.</p>
-        </div>
-      </article>
-
-      <div id="eventoPistola" class="activity-detail">
-        <h3>Ranking del torneo</h3>
-
-        <a href="img/docs/ranking-pistola.pdf" target="_blank" class="btn">
-          Ver Ranking (PDF)
-        </a>
-
-        <h3 style="margin-top: 30px;">Fotos</h3>
-
-        <div class="mini-gallery">
-          <img src="img/pistola1.jpeg" alt="Foto torneo pistola 1" onclick="openModal(activityImages, 0)">
-          <img src="img/pistola2.jpeg" alt="Foto torneo pistola 2" onclick="openModal(activityImages, 1)">
-          <img src="img/pistola3.jpeg" alt="Foto torneo pistola 3" onclick="openModal(activityImages, 2)">
-          <img src="img/pistola4.jpeg" alt="Foto torneo pistola 4" onclick="openModal(activityImages, 3)">
-          <img src="img/pistola5.jpeg" alt="Foto torneo pistola 5" onclick="openModal(activityImages, 4)">
-          <img src="img/pistola6.jpeg" alt="Foto torneo pistola 6" onclick="openModal(activityImages, 5)">
-          <img src="img/pistola7.jpeg" alt="Foto torneo pistola 7" onclick="openModal(activityImages, 6)">
-          <img src="img/pistola8.jpeg" alt="Foto torneo pistola 8" onclick="openModal(activityImages, 7)">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto" class="section">
-    <h2>Contacto</h2>
-
-    <div class="contact-box">
-      <p><strong>Email:</strong> info@tiroreconquista.com.ar</p>
-      <p><strong>WhatsApp:</strong> 3482 68-4071</p>
-      <p><strong>Ubicación:</strong> Bv. Hipólito Yrigoyen 180, Reconquista, Santa Fe</p>
-    </div>
-
-    <a class="btn" href="https://wa.me/543482684071" target="_blank">
-      Escribir por WhatsApp
-    </a>
-
-    <div class="map-box">
-      <iframe
-        src="https://www.google.com/maps?q=Bv.%20Hip%C3%B3lito%20Yrigoyen%20180,%20Reconquista,%20Santa%20Fe,%20Argentina&output=embed"
-        width="100%"
-        height="320"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy">
-      </iframe>
-    </div>
-  </section>
-
-  <section id="galeria" class="section fade-in">
-    <h2>Galería</h2>
-    <p class="section-subtitle">Imágenes del club, actividades y eventos.</p>
-
-    <div class="gallery-grid">
-      <div class="gallery-item" onclick="openModal(galleryImages, 0)">
-        <img src="img/galeria1.jpg" alt="Imagen del Polígono">
-      </div>
-
-      <div class="gallery-item" onclick="openModal(galleryImages, 1)">
-        <img src="img/galeria2.jpg" alt="Actividad de tiro deportivo">
-      </div>
-
-      <div class="gallery-item" onclick="openModal(galleryImages, 2)">
-        <img src="img/galeria3.jpg" alt="Instalaciones del club">
-      </div>
-
-      <div class="gallery-item" onclick="openModal(galleryImages, 3)">
-        <img src="img/galeria4.jpg" alt="Evento del club">
-      </div>
-
-      <div class="gallery-item" onclick="openModal(galleryImages, 4)">
-        <img src="img/galeria5.jpg" alt="Imagen del club">
-      </div>
-    </div>
-  </section>
-
-  <div id="imageModal" class="image-modal">
-    <span class="modal-close" onclick="closeModal()">&times;</span>
-
-    <button class="modal-btn prev" onclick="changeModalImage(-1)">‹</button>
-
-    <img id="modalImage" src="img/galeria1.jpg" alt="Imagen ampliada">
-
-    <button class="modal-btn next" onclick="changeModalImage(1)">›</button>
+<section id="inicio" class="hero">
+  <div>
+    <h2>Bienvenidos al Tiro</h2>
+    <p>Tradición, disciplina y excelencia deportiva</p>
+    <a href="#contacto" class="btn">Contactanos</a>
   </div>
+</section>
 
-  <div id="footer"></div>
+<section id="nosotros" class="section fade-in">
+  <h2>Nosotros</h2>
+  <p class="section-subtitle">
+    Un espacio dedicado al desarrollo del tiro deportivo en Reconquista.
+  </p>
+</section>
 
-  <script>
-    const galleryImages = [
-      "img/galeria1.jpg",
-      "img/galeria2.jpg",
-      "img/galeria3.jpg",
-      "img/galeria4.jpg",
-      "img/galeria5.jpg"
-    ];
+<section id="destacados" class="section fade-in">
+  <h2>Tiradores destacados del fin de semana</h2>
+  <p class="section-subtitle">
+    Reconocimientos y logros de nuestros tiradores.
+  </p>
 
-    const activityImages = [
-      "img/pistola1.jpeg",
-      "img/pistola2.jpeg",
-      "img/pistola3.jpeg",
-      "img/pistola4.jpeg",
-      "img/pistola5.jpeg",
-      "img/pistola6.jpeg",
-      "img/pistola7.jpeg",
-      "img/pistola8.jpeg"
-    ];
+  <div id="lista-destacados" class="grid"></div>
+</section>
 
-    let activeImages = galleryImages;
-    let currentImageIndex = 0;
-    let touchStartX = 0;
-    let touchEndX = 0;
+<section id="noticias" class="section fade-in">
+  <h2>Noticias y avisos</h2>
 
-    function toggleActivity(id) {
-      const selected = document.getElementById(id);
-      const details = document.querySelectorAll(".activity-detail");
+  <p class="section-subtitle">
+    Comunicados importantes, novedades y avisos para socios y visitantes.
+  </p>
 
-      details.forEach((detail) => {
-        if (detail.id !== id) {
-          detail.style.display = "none";
-        }
+  <div class="news-grid">
+    <article class="news-card news-card-featured">
+      <span class="news-date">MAY 2026</span>
+
+      <h3>Ellos compiten y son primeros en sus categorías</h3>
+
+      <p>
+        Invitamos a chicos, jóvenes y adultos a sumarse al tiro deportivo.
+        Entrená, mejorá tu puntería y preparate para competir en un ambiente seguro y acompañado.
+      </p>
+
+      <img
+        src="img/flyer-tiradores-destacados.png"
+        alt="Flyer invitando a chicos y jóvenes a participar del tiro deportivo"
+        class="news-flyer"
+        onclick="openModal(flyerImages, 0)"
+      >
+    </article>
+
+    
+  </div>
+</section>
+
+<section id="galeria" class="section fade-in">
+  <h2>Galería</h2>
+
+  <div class="gallery-grid">
+    <img src="img/galeria1.jpg" alt="Galería 1" onclick="openModal(galleryImages, 0)">
+    <img src="img/galeria2.jpg" alt="Galería 2" onclick="openModal(galleryImages, 1)">
+    <img src="img/galeria3.jpg" alt="Galería 3" onclick="openModal(galleryImages, 2)">
+    <img src="img/galeria4.jpg" alt="Galería 4" onclick="openModal(galleryImages, 3)">
+    <img src="img/galeria5.jpg" alt="Galería 5" onclick="openModal(galleryImages, 4)">
+  </div>
+</section>
+
+<div id="imageModal" class="image-modal">
+  <span class="modal-close" onclick="closeModal()">&times;</span>
+  <button class="modal-btn prev" onclick="changeModalImage(-1)">‹</button>
+  <img id="modalImage" alt="Imagen ampliada">
+  <button class="modal-btn next" onclick="changeModalImage(1)">›</button>
+</div>
+
+<section id="contacto" class="section">
+  <h2>Contacto</h2>
+  <p><strong>WhatsApp:</strong> 3482 68-4071</p>
+</section>
+
+<div id="footer"></div>
+
+
+
+
+
+<script>
+  const galleryImages = [
+    "img/galeria1.jpg",
+    "img/galeria2.jpg",
+    "img/galeria3.jpg",
+    "img/galeria4.jpg",
+    "img/galeria5.jpg"
+  ];
+
+  const flyerImages = [
+    "img/flyer-tiradores-destacados.png"
+  ];
+
+  const newsImages = [
+    "img/mirian-flores-raq.jpeg",
+    "img/conjunto-raq.jpeg",
+    "img/agustin-holzer-raq.jpeg"
+  ];
+
+  let activeImages = [];
+  let currentImageIndex = 0;
+
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+
+  function openModal(images, index) {
+    activeImages = images;
+    currentImageIndex = index;
+
+    document.getElementById("modalImage").src = activeImages[currentImageIndex];
+    document.getElementById("imageModal").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+
+  function changeModalImage(direction) {
+    currentImageIndex += direction;
+
+    if (currentImageIndex < 0) {
+      currentImageIndex = activeImages.length - 1;
+    }
+
+    if (currentImageIndex >= activeImages.length) {
+      currentImageIndex = 0;
+    }
+
+    document.getElementById("modalImage").src = activeImages[currentImageIndex];
+  }
+
+  document.addEventListener("keydown", function(event) {
+    const modal = document.getElementById("imageModal");
+
+    if (modal.style.display === "flex") {
+      if (event.key === "Escape") closeModal();
+      if (event.key === "ArrowLeft") changeModalImage(-1);
+      if (event.key === "ArrowRight") changeModalImage(1);
+    }
+  });
+
+  document.getElementById("imageModal").addEventListener("click", function(event) {
+    if (event.target.id === "imageModal") {
+      closeModal();
+    }
+  });
+
+  fetch("destacados.json")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("No se pudo cargar destacados.json");
+      }
+
+      return response.json();
+    })
+    .then(data => {
+      const contenedor = document.getElementById("lista-destacados");
+      const imagenes = data.map(tirador => tirador.foto);
+
+      contenedor.innerHTML = "";
+
+      data.forEach((tirador, index) => {
+        const card = document.createElement("div");
+        card.className = "card";
+
+        card.innerHTML = `
+          <img src="${tirador.foto}" alt="${tirador.nombre}">
+          <h3>${tirador.nombre}</h3>
+          <p>${tirador.categoria}</p>
+          ${tirador.logro ? `<strong>${tirador.logro}</strong>` : ""}
+        `;
+
+        card.addEventListener("click", function() {
+          openModal(imagenes, index);
+        });
+
+        contenedor.appendChild(card);
       });
+    })
+    .catch(error => {
+      console.error("Error cargando destacados:", error);
 
-      selected.style.display = selected.style.display === "block" ? "none" : "block";
-    }
-
-    function openModal(images, index) {
-      activeImages = images;
-      currentImageIndex = index;
-      document.getElementById("modalImage").src = activeImages[currentImageIndex];
-      document.getElementById("imageModal").style.display = "flex";
-    }
-
-    function closeModal() {
-      document.getElementById("imageModal").style.display = "none";
-    }
-
-    function changeModalImage(direction) {
-      currentImageIndex += direction;
-
-      if (currentImageIndex < 0) {
-        currentImageIndex = activeImages.length - 1;
-      }
-
-      if (currentImageIndex >= activeImages.length) {
-        currentImageIndex = 0;
-      }
-
-      document.getElementById("modalImage").src = activeImages[currentImageIndex];
-    }
-
-    document.addEventListener("keydown", function(event) {
-      const modal = document.getElementById("imageModal");
-
-      if (modal.style.display === "flex") {
-        if (event.key === "Escape") closeModal();
-        if (event.key === "ArrowLeft") changeModalImage(-1);
-        if (event.key === "ArrowRight") changeModalImage(1);
-      }
+      document.getElementById("lista-destacados").innerHTML = `
+        <p style="color:red;">No se pudieron cargar los destacados.</p>
+      `;
     });
 
-    document.getElementById("imageModal").addEventListener("click", function(event) {
-      if (event.target.id === "imageModal") {
-        closeModal();
-      }
-    });
+  const faders = document.querySelectorAll(".fade-in");
 
-    document.getElementById("imageModal").addEventListener("touchstart", function(event) {
-      touchStartX = event.changedTouches[0].screenX;
-    });
-
-    document.getElementById("imageModal").addEventListener("touchend", function(event) {
-      touchEndX = event.changedTouches[0].screenX;
-      handleSwipe();
-    });
-
-    function handleSwipe() {
-      const swipeDistance = touchEndX - touchStartX;
-
-      if (swipeDistance > 50) {
-        changeModalImage(-1);
-      }
-
-      if (swipeDistance < -50) {
-        changeModalImage(1);
-      }
-    }
-    function toggleMenu() {
-        const nav = document.getElementById("navLinks");
-        nav.classList.toggle("active");
-        }
-
-    const faders = document.querySelectorAll(".fade-in");
-
-    const observer = new IntersectionObserver(entries => {
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            }
-        }); 
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
     });
+  });
 
-    faders.forEach(el => observer.observe(el));
-
-    fetch("footer.html")
+  faders.forEach(element => observer.observe(element));
+  fetch("footer.html")
     .then(response => response.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -388,16 +250,16 @@
     .catch(error => {
       console.error("No se pudo cargar el footer:", error);
     });
-  </script>
-    <a
-        href="https://wa.me/543482684071?text=Hola,%20quiero%20información%20sobre%20el%20Tiro%20Reconquista"
-        class="whatsapp-float"
-        target="_blank"
-        aria-label="Escribir por WhatsApp"
-        >
-        <span>WhatsApp</span>
-    </a>
-  
+</script>
+
+<a
+  href="https://wa.me/543482684071?text=Hola,%20quiero%20información%20sobre%20el%20Tiro%20Reconquista"
+  class="whatsapp-float"
+  target="_blank"
+  aria-label="Escribir por WhatsApp"
+>
+  💬
+</a>
 
 </body>
 </html>

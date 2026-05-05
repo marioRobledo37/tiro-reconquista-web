@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Actividades | Tiro Reconquista</title>
+
+  <meta name="description" content="Agenda de eventos, torneos, rankings y fotos de la Sub Comisión de Tiro Reconquista.">
+  <meta name="keywords" content="actividades tiro reconquista, torneos tiro reconquista, ranking tiro deportivo, eventos tiro deportivo">
+
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="img/logo.png" alt="Logo Sub Comisión de Tiro Reconquista" class="site-logo">
+
+      <div class="header-text">
+        <h1>Sub Comisión de Tiro Reconquista</h1>
+        <p>Reconquista · Santa Fe · Argentina</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="nav-container">
+      <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="actividades.html">Actividades</a>
+        <a href="disciplinas.html">Disciplinas</a>
+        <a href="staff.html">Staff</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="index.html#galeria">Galería</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="actividades" class="section fade-in">
+      <h2>Actividades</h2>
+      <p class="section-subtitle">Agenda de próximos eventos y actividades realizadas.</p>
+
+      <div class="agenda-group">
+        <h3 class="agenda-title">Próximos eventos</h3>
+        <p class="section-subtitle">Próximamente se publicarán nuevas actividades.</p>
+      </div>
+
+      <div class="agenda-group">
+        <h3 class="agenda-title">Eventos realizados</h3>
+
+        <article class="agenda-card done" onclick="toggleActivity('eventoJaaukanigas')">
+          <div class="agenda-date">
+            <span>02</span>
+            <small>MAY</small>
+          </div>
+
+          <img src="img/20260502_primera-fecha.jpeg" alt="Campeonato Jaaukanigás 2026">
+
+          <div class="agenda-content">
+            <span class="event-badge done">Realizado</span>
+            <h3>Campeonato Jaaukanigás 2026</h3>
+            <p>Rankings, resultados y fotos del encuentro.</p>
+          </div>
+        </article>
+
+        <div id="eventoJaaukanigas" class="activity-detail">
+          <h3>Rankings del torneo</h3>
+
+          <div class="ranking-links">
+            <a href="img/docs/ra2026-camp-jaaukanigas-1fecha.pdf" target="_blank" class="btn">Ranking RA</a>
+            <a href="img/docs/raq-2026-camp-jaaukanigas-1fecha.pdf" target="_blank" class="btn">Ranking RAQ</a>
+            <a href="img/docs/car22-2026-camp-jaaukanigas-1fecha-3px10 y 20t.pdf" target="_blank" class="btn">Ranking CAR22</a>
+          </div>
+
+          <a href="img/20260502_primera-fecha.jpeg" target="_blank" class="btn" style="margin-top: 15px;">
+            Ver flyer completo
+          </a>
+
+          <h3 style="margin-top: 30px;">Fotos</h3>
+
+          <div class="mini-gallery">
+            <img src="img/mirian-flores-raq.jpeg" alt="Mirian Flores - RAQ" onclick="openModal(eventoJaaukanigasImages, 0)">
+            <img src="img/conjunto-raq.jpeg" alt="Tiradores RAQ" onclick="openModal(eventoJaaukanigasImages, 1)">
+            <img src="img/agustin-holzer-raq.jpeg" alt="Agustín Holzer - RAQ" onclick="openModal(eventoJaaukanigasImages, 2)">
+            <img src="img/raq1.jpeg" alt="RAQ 1" onclick="openModal(eventoJaaukanigasImages, 3)">
+            <img src="img/raq2.jpeg" alt="RAQ 2" onclick="openModal(eventoJaaukanigasImages, 4)">
+            <img src="img/raq3.jpeg" alt="RAQ 3" onclick="openModal(eventoJaaukanigasImages, 5)">
+            <img src="img/raq4.jpeg" alt="RAQ 4" onclick="openModal(eventoJaaukanigasImages, 6)">
+            <img src="img/raq5.jpeg" alt="RAQ 5" onclick="openModal(eventoJaaukanigasImages, 7)">
+            <img src="img/1.jpg" alt="Foto 1" onclick="openModal(eventoJaaukanigasImages, 8)">
+            <img src="img/2.jpg" alt="Foto 2" onclick="openModal(eventoJaaukanigasImages, 9)">
+            <img src="img/3.jpg" alt="Foto 3" onclick="openModal(eventoJaaukanigasImages, 10)">
+            <img src="img/4.jpg" alt="Foto 4" onclick="openModal(eventoJaaukanigasImages, 11)">
+            <img src="img/5.jpg" alt="Foto 5" onclick="openModal(eventoJaaukanigasImages, 12)">
+            <img src="img/6.jpg" alt="Foto 6" onclick="openModal(eventoJaaukanigasImages, 13)">
+            <img src="img/7.jpg" alt="Foto 7" onclick="openModal(eventoJaaukanigasImages, 14)">
+            <img src="img/8.jpg" alt="Foto 8" onclick="openModal(eventoJaaukanigasImages, 15)">
+            <img src="img/9.jpg" alt="Foto 9" onclick="openModal(eventoJaaukanigasImages, 16)">
+            <img src="img/10.jpg" alt="Foto 10" onclick="openModal(eventoJaaukanigasImages, 17)">
+            <img src="img/11.jpg" alt="Foto 11" onclick="openModal(eventoJaaukanigasImages, 18)">
+            <img src="img/12.jpg" alt="Foto 12" onclick="openModal(eventoJaaukanigasImages, 19)">
+            <img src="img/13.jpg" alt="Foto 13" onclick="openModal(eventoJaaukanigasImages, 20)">
+            <img src="img/14.jpg" alt="Foto 14" onclick="openModal(eventoJaaukanigasImages, 21)">
+            <img src="img/15.jpg" alt="Foto 15" onclick="openModal(eventoJaaukanigasImages, 22)">
+            <img src="img/17.jpg" alt="Foto 17" onclick="openModal(eventoJaaukanigasImages, 23)">
+            <img src="img/18.jpg" alt="Foto 18" onclick="openModal(eventoJaaukanigasImages, 24)">
+          </div>
+        </div>
+
+        <article class="agenda-card done" onclick="toggleActivity('eventoPistola')">
+          <div class="agenda-date">
+            <span>12</span>
+            <small>ABR</small>
+          </div>
+
+          <img src="img/pistola1.jpeg" alt="Torneo de Pistola">
+
+          <div class="agenda-content">
+            <span class="event-badge done">Realizado</span>
+            <h3>Torneo de Pistola</h3>
+            <p>Ranking, resultados y fotos del encuentro.</p>
+          </div>
+        </article>
+
+        <div id="eventoPistola" class="activity-detail">
+          <h3>Ranking del torneo</h3>
+
+          <a href="img/docs/ranking-pistola.pdf" target="_blank" class="btn">
+            Ver Ranking PDF
+          </a>
+
+          <h3 style="margin-top: 30px;">Fotos</h3>
+
+          <div class="mini-gallery">
+            <img src="img/pistola1.jpeg" alt="Foto torneo pistola 1" onclick="openModal(activityImages, 0)">
+            <img src="img/pistola2.jpeg" alt="Foto torneo pistola 2" onclick="openModal(activityImages, 1)">
+            <img src="img/pistola3.jpeg" alt="Foto torneo pistola 3" onclick="openModal(activityImages, 2)">
+            <img src="img/pistola4.jpeg" alt="Foto torneo pistola 4" onclick="openModal(activityImages, 3)">
+            <img src="img/pistola5.jpeg" alt="Foto torneo pistola 5" onclick="openModal(activityImages, 4)">
+            <img src="img/pistola6.jpeg" alt="Foto torneo pistola 6" onclick="openModal(activityImages, 5)">
+            <img src="img/pistola7.jpeg" alt="Foto torneo pistola 7" onclick="openModal(activityImages, 6)">
+            <img src="img/pistola8.jpeg" alt="Foto torneo pistola 8" onclick="openModal(activityImages, 7)">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="imageModal" class="image-modal">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <button class="modal-btn prev" onclick="changeModalImage(-1)">‹</button>
+    <img id="modalImage" src="img/pistola1.jpeg" alt="Imagen ampliada">
+    <button class="modal-btn next" onclick="changeModalImage(1)">›</button>
+  </div>
+
+  <div id="footer"></div>
+
+  <a
+    href="https://wa.me/543482684071?text=Hola,%20quiero%20información%20sobre%20el%20Tiro%20Reconquista"
+    class="whatsapp-float"
+    target="_blank"
+    aria-label="Escribir por WhatsApp">
+    <span>WhatsApp</span>
+  </a>
+
+  <script>
+    const eventoJaaukanigasImages = [
+      "img/mirian-flores-raq.jpeg",
+      "img/conjunto-raq.jpeg",
+      "img/agustin-holzer-raq.jpeg",
+      "img/raq1.jpeg",
+      "img/raq2.jpeg",
+      "img/raq3.jpeg",
+      "img/raq4.jpeg",
+      "img/raq5.jpeg",
+      "img/1.jpg",
+      "img/2.jpg",
+      "img/3.jpg",
+      "img/4.jpg",
+      "img/5.jpg",
+      "img/6.jpg",
+      "img/7.jpg",
+      "img/8.jpg",
+      "img/9.jpg",
+      "img/10.jpg",
+      "img/11.jpg",
+      "img/12.jpg",
+      "img/13.jpg",
+      "img/14.jpg",
+      "img/15.jpg",
+      "img/17.jpg",
+      "img/18.jpg"
+    ];
+
+    const activityImages = [
+      "img/pistola1.jpeg",
+      "img/pistola2.jpeg",
+      "img/pistola3.jpeg",
+      "img/pistola4.jpeg",
+      "img/pistola5.jpeg",
+      "img/pistola6.jpeg",
+      "img/pistola7.jpeg",
+      "img/pistola8.jpeg"
+    ];
+
+    let activeImages = activityImages;
+    let currentImageIndex = 0;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("active");
+    }
+
+    function toggleActivity(id) {
+      const selected = document.getElementById(id);
+      const details = document.querySelectorAll(".activity-detail");
+
+      details.forEach((detail) => {
+        if (detail.id !== id) {
+          detail.style.display = "none";
+        }
+      });
+
+      selected.style.display = selected.style.display === "block" ? "none" : "block";
+    }
+
+    function openModal(images, index) {
+      activeImages = images;
+      currentImageIndex = index;
+      document.getElementById("modalImage").src = activeImages[currentImageIndex];
+      document.getElementById("imageModal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+
+    function changeModalImage(direction) {
+      currentImageIndex += direction;
+
+      if (currentImageIndex < 0) currentImageIndex = activeImages.length - 1;
+      if (currentImageIndex >= activeImages.length) currentImageIndex = 0;
+
+      document.getElementById("modalImage").src = activeImages[currentImageIndex];
+    }
+
+    function handleSwipe() {
+      const swipeDistance = touchEndX - touchStartX;
+
+      if (swipeDistance > 50) changeModalImage(-1);
+      if (swipeDistance < -50) changeModalImage(1);
+    }
+
+    document.addEventListener("keydown", function(event) {
+      const modal = document.getElementById("imageModal");
+
+      if (modal.style.display === "flex") {
+        if (event.key === "Escape") closeModal();
+        if (event.key === "ArrowLeft") changeModalImage(-1);
+        if (event.key === "ArrowRight") changeModalImage(1);
+      }
+    });
+
+    document.getElementById("imageModal").addEventListener("click", function(event) {
+      if (event.target.id === "imageModal") closeModal();
+    });
+
+    document.getElementById("imageModal").addEventListener("touchstart", function(event) {
+      touchStartX = event.changedTouches[0].screenX;
+    });
+
+    document.getElementById("imageModal").addEventListener("touchend", function(event) {
+      touchEndX = event.changedTouches[0].screenX;
+      handleSwipe();
+    });
+
+    const faders = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    });
+
+    faders.forEach(el => observer.observe(el));
+
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("footer").innerHTML = html;
+      })
+      .catch(error => {
+        console.error("No se pudo cargar el footer:", error);
+      });
+  </script>
+
+</body>
+</html>
