@@ -149,9 +149,55 @@
   <button class="modal-btn next" onclick="changeModalImage(1)">›</button>
 </div>
 
-<section id="contacto" class="section">
+<section id="contacto" class="section fade-in">
   <h2>Contacto</h2>
-  <p><strong>WhatsApp:</strong> 3482 68-4071</p>
+
+  <p class="section-subtitle">
+    Comunicate con nosotros para consultas, actividades, inscripción o información sobre el club.
+  </p>
+
+  <div class="contact-box">
+    <p><strong>Email:</strong> info@tiroreconquista.com.ar</p>
+    <p><strong>WhatsApp:</strong> 3482 68-4071</p>
+    <p><strong>Ubicación:</strong> Bv. Hipólito Yrigoyen 180, Reconquista, Santa Fe</p>
+  </div>
+
+  <a
+    class="btn"
+    href="https://wa.me/543482684071?text=Hola,%20quiero%20información%20sobre%20el%20Tiro%20Reconquista"
+    target="_blank"
+  >
+    Escribir por WhatsApp
+  </a>
+
+  <div class="map-box">
+    <iframe
+      src="https://www.google.com/maps?q=Bv.%20Hip%C3%B3lito%20Yrigoyen%20180,%20Reconquista,%20Santa%20Fe,%20Argentina&output=embed"
+      width="100%"
+      height="320"
+      style="border:0;"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<section id="comentarios" class="section fade-in">
+  <h2>Opiniones de la comunidad</h2>
+
+  <p class="section-subtitle">
+    Dejá tu comentario. Será publicado luego de ser aprobado.
+  </p>
+
+  <form class="comment-form" onsubmit="enviarComentario(event)">
+    <input id="nombre" type="text" placeholder="Tu nombre" maxlength="40" required>
+    <textarea id="comentario" placeholder="Escribí tu comentario..." maxlength="300" required></textarea>
+    <button class="btn" type="submit">Enviar comentario</button>
+  </form>
+
+  <div class="comments-list" id="commentsList">
+    <p class="empty-comments">Cargando comentarios...</p>
+  </div>
 </section>
 
 <div id="footer"></div>
@@ -297,6 +343,75 @@
 >
   💬
 </a>
+
+<!-- FIREBASE -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  getDocs,
+  query,
+  where
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCeoxXSH26qnM4OlQyBXauHYFbWbCftx3M",
+  authDomain: "tiro-reconquista.firebaseapp.com",
+  projectId: "tiro-reconquista",
+  storageBucket: "tiro-reconquista.firebasestorage.app",
+  messagingSenderId: "211983664243",
+  appId: "1:211983664243:web:2d074bd2588f238b90d606",
+  measurementId: "G-1ZYE5QCHL2"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// GUARDAR COMENTARIO
+window.enviarComentario = async function (e) {
+  e.preventDefault();
+
+  const nombre = document.getElementById("nombre").value;
+  const texto = document.getElementById("comentario").value;
+
+  await addDoc(collection(db, "comentarios"), {
+    nombre,
+    texto,
+    aprobado: false,
+    fecha: new Date()
+  });
+
+  alert("Comentario enviado. Será visible cuando sea aprobado.");
+
+  e.target.reset();
+};
+
+// CARGAR COMENTARIOS APROBADOS
+async function cargarComentarios() {
+  const contenedor = document.getElementById("commentsList");
+
+  const q = query(collection(db, "comentarios"), where("aprobado", "==", true));
+  const snapshot = await getDocs(q);
+
+  snapshot.forEach(doc => {
+    const data = doc.data();
+
+    const div = document.createElement("div");
+    div.className = "comment";
+
+    div.innerHTML = `
+      <strong>${data.nombre}</strong>
+      <p>${data.texto}</p>
+    `;
+
+    contenedor.appendChild(div);
+  });
+}
+
+cargarComentarios();
+</script>
 
 </body>
 </html>
