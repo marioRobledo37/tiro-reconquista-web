@@ -2,17 +2,24 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Staff</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Staff | Tiro Reconquista</title>
+
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
 
 <header class="site-header">
   <div class="header-inner">
-    <img src="img/logo.png" class="site-logo">
-    <h1>Staff</h1>
+    <img src="img/logo.png" alt="Logo Sub Comisión de Tiro Reconquista" class="site-logo">
+
+    <div class="header-text">
+      <h1>Staff</h1>
+      <p>Sub Comisión de Tiro Reconquista</p>
+    </div>
   </div>
 </header>
 
@@ -22,7 +29,7 @@
 
     <div class="nav-links" id="navLinks">
       <a href="index.html#inicio">Inicio</a>
-      <a href="index.html#actividades">Actividades</a>
+      <a href="actividades.html">Actividades</a>
       <a href="disciplinas.html">Disciplinas</a>
       <a href="staff.html">Staff</a>
       <a href="index.html#contacto">Contacto</a>
@@ -31,42 +38,135 @@
   </div>
 </nav>
 
-<section class="section">
-  <h2>Comisión Directiva e Instructores</h2>
+<section class="section fade-in staff-section">
+  <h2>Comisión Directiva</h2>
 
-  <div class="cards-grid">
+  <p class="section-subtitle">
+    Tocá una tarjeta para ver la imagen completa.
+  </p>
 
-    <div class="card">
-      <img src="img/staff1.jpg" class="staff-img">
-      <h3>Nombre Apellido</h3>
+  <div class="staff-grid">
+
+    <div class="staff-person-card" onclick="openModal(staffImages, 0)">
+      <img src="img/comision/ernestocainelli.png" alt="Ernesto Cainelli">
+      <h3>ERNESTO CAINELLI</h3>
       <p class="role">Presidente</p>
-      <p>Responsable institucional del área de tiro.</p>
     </div>
 
-    <div class="card">
-      <img src="img/staff2.jpg" class="staff-img">
-      <h3>Nombre Apellido</h3>
-      <p class="role">Instructor</p>
-      <p>Formación y seguridad en prácticas deportivas.</p>
+    <div class="staff-person-card" onclick="openModal(staffImages, 1)">
+      <img src="img/comision/dominguezgermanc.png" alt="Germán Domínguez">
+      <h3>GERMÁN DOMÍNGUEZ</h3>
+      <p class="role">Instructor Paratiro</p>
     </div>
 
-    <div class="card">
-      <img src="img/staff3.jpg" class="staff-img">
-      <h3>Nombre Apellido</h3>
-      <p class="role">Colaborador</p>
-      <p>Apoyo en torneos y actividades.</p>
+    <div class="staff-person-card" onclick="openModal(staffImages, 2)">
+      <img src="img/comision/fabiancargnelutti.png" alt="Fabián Cargnelutti">
+      <h3>FABIÁN CARGNELUTTI</h3>
+      <p class="role">Responsable Administrativo</p>
+    </div>
+
+    <div class="staff-person-card" onclick="openModal(staffImages, 3)">
+      <img src="img/comision/fabiancominc.png" alt="Fabián Comin">
+      <h3>FABIÁN COMIN</h3>
+      <p class="role">Entrenador Nacional</p>
+    </div>
+
+    <div class="staff-person-card" onclick="openModal(staffImages, 4)">
+      <img src="img/comision/javiertortul.png" alt="Javier Tortul">
+      <h3>JAVIER TORTUL</h3>
+      <p class="role">Entrenador Nacional</p>
+    </div>
+
+    <div class="staff-person-card" onclick="openModal(staffImages, 5)">
+      <img src="img/comision/rubengallard.png" alt="Rubén Gallard">
+      <h3>RUBÉN GALLARD</h3>
+      <p class="role">Responsable de seguridad</p>
     </div>
 
   </div>
 </section>
 
+<div id="imageModal" class="image-modal">
+  <span class="modal-close" onclick="closeModal()">&times;</span>
+  <button class="modal-btn prev" onclick="changeModalImage(-1)">‹</button>
+  <img id="modalImage" alt="Imagen ampliada">
+  <button class="modal-btn next" onclick="changeModalImage(1)">›</button>
+</div>
+
 <div id="footer"></div>
+
+<a
+  href="https://wa.me/543482684071?text=Hola,%20quiero%20información%20sobre%20el%20Tiro%20Reconquista"
+  class="whatsapp-float"
+  target="_blank"
+  aria-label="Escribir por WhatsApp"
+>
+  <span>WhatsApp</span>
+</a>
+
 <script>
-function toggleMenu() {
-  const nav = document.getElementById("navLinks");
-  nav.classList.toggle("active");
-}
-fetch("footer.html")
+  const staffImages = [
+    "img/comision/ernestocainelli.png",
+    "img/comision/dominguezgermanc.png",
+    "img/comision/fabiancargnelutti.png",
+    "img/comision/fabiancominc.png",
+    "img/comision/javiertortul.png",
+    "img/comision/rubengallard.png"
+  ];
+
+  let activeImages = [];
+  let currentImageIndex = 0;
+
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+
+  function openModal(images, index) {
+    activeImages = images;
+    currentImageIndex = index;
+
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+
+    modalImage.src = activeImages[currentImageIndex];
+    modal.style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+
+  function changeModalImage(direction) {
+    currentImageIndex += direction;
+
+    if (currentImageIndex < 0) {
+      currentImageIndex = activeImages.length - 1;
+    }
+
+    if (currentImageIndex >= activeImages.length) {
+      currentImageIndex = 0;
+    }
+
+    document.getElementById("modalImage").src = activeImages[currentImageIndex];
+  }
+
+  document.addEventListener("keydown", function(event) {
+    const modal = document.getElementById("imageModal");
+
+    if (modal.style.display === "flex") {
+      if (event.key === "Escape") closeModal();
+      if (event.key === "ArrowLeft") changeModalImage(-1);
+      if (event.key === "ArrowRight") changeModalImage(1);
+    }
+  });
+
+  document.getElementById("imageModal").addEventListener("click", function(event) {
+    if (event.target.id === "imageModal") {
+      closeModal();
+    }
+  });
+
+  fetch("footer.html")
     .then(response => response.text())
     .then(html => {
       document.getElementById("footer").innerHTML = html;
@@ -75,13 +175,6 @@ fetch("footer.html")
       console.error("No se pudo cargar el footer:", error);
     });
 </script>
-    <a
-        href="https://wa.me/543482684071?text=Hola,%20quiero%20información%20sobre%20el%20Tiro%20Reconquista"
-        class="whatsapp-float"
-        target="_blank"
-        aria-label="Escribir por WhatsApp"
-        >
-        <span>WhatsApp</span>
-    </a>
+
 </body>
 </html>

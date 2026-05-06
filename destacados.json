@@ -1,27 +1,9 @@
 [
   {
-    "nombre": "COMIN FABIAN",
-    "categoria": "SENIOR",
-    "logro": "GANADOR DEL SAN GERONIMO DEL REY DORADO 2016",
-    "foto": "img/tiradores/fabiancomin.png"
-  },
-  {
-    "nombre": "ANA PAULA GARAY",
-    "categoria": "MAYORES",
+    "nombre": "JUAN BAUTISTA AGRETTI",
+    "categoria": "MINI",
     "logro": "",
-    "foto": "img/tiradores/anapaulagaray.png"
-  },
-  {
-    "nombre": "YULIANA CARGNELUTTI",
-    "categoria": "JUNIOR",
-    "logro": "",
-    "foto": "img/tiradores/cargneluttiyuliana.png"
-  },
-  {
-    "nombre": "VIOLETA DELLA ROSA",
-    "categoria": "CADETES",
-    "logro": "",
-    "foto": "img/tiradores/dellarosavioleta.png"
+    "foto": "img/tiradores/juanbautistaagretti.png"
   },
   {
     "nombre": "LUCAS FAIN",
@@ -30,16 +12,28 @@
     "foto": "img/tiradores/fainlucas.png"
   },
   {
-    "nombre": "GERMAN DOMINGUEZ",
-    "categoria": "SENIOR",
-    "logro": "SAN GERONIMO DE BRONCE 2025",
-    "foto": "img/tiradores/dominguezgerman.png"
+    "nombre": "VIOLETA DELLA ROSA",
+    "categoria": "CADETES",
+    "logro": "",
+    "foto": "img/tiradores/dellarosavioleta.png"
   },
   {
-    "nombre": "JUAN BAUTISTA AGRETTI",
-    "categoria": "MINI",
+    "nombre": "NATASHA ZANABRIA",
+    "categoria": "JUVENILES",
     "logro": "",
-    "foto": "img/tiradores/juanbautistaagretti.png"
+    "foto": "img/tiradores/natashazanabria.png"
+  },
+  {
+    "nombre": "YULIANA CARGNELUTTI",
+    "categoria": "JUNIOR",
+    "logro": "",
+    "foto": "img/tiradores/cargneluttiyuliana.png"
+  },
+  {
+    "nombre": "ANA PAULA GARAY",
+    "categoria": "MAYORES",
+    "logro": "",
+    "foto": "img/tiradores/anapaulagaray.png"
   },
   {
     "nombre": "MILAGROS DEL ZOTTO",
@@ -48,10 +42,16 @@
     "foto": "img/tiradores/milagrosdelzotto.png"
   },
   {
-    "nombre": "NATASHA ZANABRIA",
-    "categoria": "JUVENILES",
-    "logro": "",
-    "foto": "img/tiradores/natashazanabria.png"
+    "nombre": "GERMAN DOMINGUEZ",
+    "categoria": "SENIOR",
+    "logro": "SAN GERONIMO DE BRONCE 2025",
+    "foto": "img/tiradores/dominguezgerman.png"
+  },
+  {
+    "nombre": "COMIN FABIAN",
+    "categoria": "SENIOR",
+    "logro": "GANADOR DEL SAN GERONIMO DEL REY DORADO 2016",
+    "foto": "img/tiradores/fabiancomin.png"
   },
   {
     "nombre": "MARIO ROBLEDO",
